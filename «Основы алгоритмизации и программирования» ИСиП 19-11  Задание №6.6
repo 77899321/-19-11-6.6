@@ -1,0 +1,24 @@
+using System;
+using System.Collections;
+
+namespace arrayList
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ArrayList list = new ArrayList() { 12, "hel", 5, 7.3, "123gh", "67.as", 1418, 89.9, 0.5, "hey"};
+
+            list.Add("hello");
+            list.Add(" world");
+
+            list.RemoveAt(0);
+
+            foreach (var o in list)
+            {
+                Console.Write(o + " | ");
+            }
+            Console.WriteLine();
+        }
+    }
+}
